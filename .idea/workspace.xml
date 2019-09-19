@@ -63,4 +63,12 @@
     </task>
     <servers />
   </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="target.x" language="JAVA" />
+        <watch expression="target.y" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
 </project>

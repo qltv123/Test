@@ -3,7 +3,7 @@ public class Program {
         Map map = new Map(4,4,5);
         map.printMap();
         while(true){
-            map.printMapP();
+            map.run();
         }
     }
 }

@@ -67,14 +67,17 @@ public class Map {
             if(arr[0] != num.x && arr[1] != num.y){
                 System.out.println(" You missed");
                 System.out.println(rocket + " rockets left");
-            } else if (arr[0] == num.x && arr[1] == num.y){
+                System.out.println("Enemy: " + listTarget.size());
+            } else if (arr[0] == num.x && arr[1] == num.y && listTarget.size() < 0){
                 System.out.println(" You Won");
                 System.out.println(rocket + " rockets left");
-            }
-            if (rocket < 1 || arr[0] == num.x && arr[1] == num.y || listTarget.size() < 1){
+                System.out.println("Enemy: " + listTarget.size());
                 System.exit(0);
             }
+            if (rocket < 1 ){
+                System.exit(0);
+            }
+            }
+
         }
     }
-
-}

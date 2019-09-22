@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.jar.JarOutputStream;
 
 
 public class Map {
@@ -34,8 +35,8 @@ public class Map {
                 System.out.print(" - ");
             }
             System.out.println();
-            }
         }
+    }
 
 
     public void printMapP(){
@@ -47,37 +48,30 @@ public class Map {
         for (int i = 0; i < tmp.length; i++) {
             arr[i] = Integer.parseInt(tmp[i]);
         }
-        for (Target num : listTarget) {
-            for (int i = 0; i < height; i++) {
-                for (int j = 0; j < width; j++) {
-                    if (i == arr[0] && j == arr[1]){
-                        if (arr[0] == num.x && arr[1] == num.y){
-                            System.out.print(" O ");
-                            rocket--;
-                        } else if (arr[0] != num.x && arr[1] != num.y){
-                            System.out.print(" X ");
-                            rocket--;
-                        }
-                    } else {
-                        System.out.print(" - ");
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
+                if(i== arr[0] && j == arr[1]){
+                    if (arr[0] == this.target.y && arr[1] == this.target.x){
+                        System.out.print(" O ");
+                        rocket--;
+                    } else if (arr[0] != this.target.y && arr[1] != this.target.x){
+                        System.out.print(" X ");
+                        rocket--;
                     }
+                } else {
+                    System.out.print(" - ");
                 }
-                System.out.println();
             }
-            if(arr[0] != num.x && arr[1] != num.y){
-                System.out.println(" You missed");
-                System.out.println(rocket + " rockets left");
-                System.out.println("Enemy: " + listTarget.size());
-            } else if (arr[0] == num.x && arr[1] == num.y && listTarget.size() < 0){
-                System.out.println(" You Won");
-                System.out.println(rocket + " rockets left");
-                System.out.println("Enemy: " + listTarget.size());
-                System.exit(0);
-            }
-            if (rocket < 1 ){
-                System.exit(0);
-            }
-            }
-
+            System.out.println();
+        }
+        if(arr[0] == this.target.y && arr[1] == this.target.x){
+            System.out.println("You win");
+            System.out.println(rocket + " left");
+            System.exit(0);
+        } else if (rocket < 1) {
+            System.out.println("You lose");
+            System.out.println(rocket + " left");
+            System.exit(0);
         }
     }
+}

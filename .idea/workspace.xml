@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c22d32b7-6c3d-4a57-9a48-99f6e5fdfe2c" name="Default Changelist" comment="" />
+    <list default="true" id="70eb3309-1b06-4128-a68e-5546a616984e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +15,18 @@
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1R0XDed2NbRGHI5y4HtLT9K7vcO" />
+  <component name="ProjectId" id="1RBZoztK6nC2Kjj2jxSgAemBR9d" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../XJava" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\C4e\Xjava4\src" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -28,17 +39,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Program">
+  <component name="RunManager">
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Program" />
-      <module name="Xjava3" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Target" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Target" />
-      <module name="Xjava3" />
+      <module name="Xjava4" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -46,7 +50,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Program" />
-        <item itemvalue="Application.Target" />
       </list>
     </recent_temporary>
   </component>
@@ -55,20 +58,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c22d32b7-6c3d-4a57-9a48-99f6e5fdfe2c" name="Default Changelist" comment="" />
-      <created>1568804868804</created>
+      <changelist id="70eb3309-1b06-4128-a68e-5546a616984e" name="Default Changelist" comment="" />
+      <created>1569142628466</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1568804868804</updated>
+      <updated>1569142628466</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="target.x" language="JAVA" />
-        <watch expression="target.y" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>
